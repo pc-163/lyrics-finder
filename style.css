@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.bg-image{
+    position: relative;
+    background-image: url('header2.jpg');
+    padding: 150px 0;
+    background-size: cover;
+    background-position: center;
+}
+.bg-image p{
+    font-size: 22px;
+    font-style: italic;
+}
+.bg-image h1{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.bg-image input{
+    padding: 22px 20px;
+    height: 46px;
+}
+
+.bg-image button{
+    /* padding: 22px 20px; */
+    height: 46px;
+}
+
+ul.list_data{
+    padding: 12px;
+    display: flex;
+    /* justify-content: space-between; */
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+ul.list_data li::marker{
+    font-size: 0;
+}
+
+ul.list-hading li span{
+    font-size: 16px;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+ul.list_data li.track{
+    width: 35%;
+    float: left;
+}
+ul.list_data li.artist, ul.list_data li.album{
+    width: 25%;
+    float: left;
+}
+ul.list_data li.duration{
+    width: 15%;
+    float: left;
+    text-align: right;
+}
+
+.set-list li.track img{
+    width: 50px;
+    padding-right: 10px;
+}
+
+.list-hading li.track span{
+    padding-left: 50px;
+}
+
+.set-list li.track span{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.set-list li.artist span{
+    font-size: 14px;
+    color: #919191;
+}
+ul.set-list:hover{
+    background-color: #f9f9f9;
+}
+#getlyrics{
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#setLyrics{
+    display: none;
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#lyrics-hide{
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+#lyrics-hide li span{
+  padding: 0 !important;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 10%;
+    right: 0;
+}
+
+footer a{
+    color: black;
+}
