@@ -63,8 +63,9 @@ ul.list_data li.duration{
 }
 
 .set-list li.track img{
-    width: 50px;
+    width: 10%;
     padding-right: 10px;
+    float: left;
 }
 
 .list-hading li.track span{
@@ -74,6 +75,9 @@ ul.list_data li.duration{
 .set-list li.track span{
     font-weight: 600;
     font-size: 16px;
+    float: left;
+    width: 80%;
+
 }
 
 .set-list li.artist span{
@@ -108,10 +112,35 @@ ul.set-list:hover{
 footer{
     position: fixed;
     bottom: 0;
-    width: 10%;
+    width: 20%;
     right: 0;
 }
 
 footer a{
     color: black;
 }
+
+
+.loader {
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+    display: none;
+    margin: 100px auto;
+
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
